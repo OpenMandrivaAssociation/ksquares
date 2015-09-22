@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ksquares-15.08.0.tar.xz: bbdecbb16445c607d6ce2847b57902c47a9bf511
+sources:
+  ksquares-15.08.1.tar.xz: ec301ccd33ff5fa0a0bb9263b3290bc2bd7e8b07
