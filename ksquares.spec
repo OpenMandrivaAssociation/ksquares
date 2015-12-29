@@ -1,6 +1,6 @@
 Name:		ksquares
 Version:	15.12.0
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
