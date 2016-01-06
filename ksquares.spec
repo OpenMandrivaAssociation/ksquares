@@ -24,7 +24,8 @@ BuildRequires:  cmake(KF5IconThemes)
 BuildRequires:  cmake(KF5XmlGui)                                                               
 BuildRequires:  cmake(KF5KIO)                                                                  
 BuildRequires:  cmake(KF5NotifyConfig)
-
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 KSquares is an implementation of the popular paper based game squares. 
