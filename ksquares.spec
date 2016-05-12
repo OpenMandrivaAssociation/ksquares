@@ -1,5 +1,5 @@
 Name:		ksquares
-Version:	16.04.0
+Version:	16.04.1
 Release:	1
 Epoch:		1
 Summary:	An implementation of the popular paper based game squares
