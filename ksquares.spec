@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		ksquares
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		1
 Summary:	An implementation of the popular paper based game squares
@@ -37,7 +37,6 @@ quares wins.
 %{_bindir}/ksquares                                                                                    
 %{_datadir}/applications/org.kde.ksquares.desktop                                                                                                                                
 %{_datadir}/config.kcfg/ksquares.kcfg      
-%{_datadir}/kxmlgui5/ksquares/ksquaresui.rc
 %{_iconsdir}/hicolor/*/apps/ksquares.png                                                               
 %{_datadir}/metainfo/org.kde.ksquares.appdata.xml
 #------------------------------------------------------------------------------
