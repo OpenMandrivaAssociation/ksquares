@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ksquares-17.12.1.tar.xz: bebb40823126aae5e6cd7b2d8d02b23dd4b4f0f5
+sources:
+  ksquares-17.12.2.tar.xz: 13659095332e7a3bb6baaf05de7740a65b4f3ac3
