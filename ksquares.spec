@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		ksquares
 Version:	22.08.2
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
