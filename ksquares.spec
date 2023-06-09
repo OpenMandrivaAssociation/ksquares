@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		ksquares
-Version:	23.04.1
+Version:	23.04.2
 Release:	1
 Epoch:		1
 Summary:	An implementation of the popular paper based game squares
