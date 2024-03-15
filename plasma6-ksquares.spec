@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		plasma6-ksquares
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
