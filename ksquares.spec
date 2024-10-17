@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/ksquares/
+URL:		https://www.kde.org/applications/games/ksquares/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
