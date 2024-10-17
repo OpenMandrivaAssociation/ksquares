@@ -8,7 +8,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/ksquares/
+URL:		https://www.kde.org/applications/games/ksquares/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/ksquares/-/archive/%{gitbranch}/ksquares-%{gitbranchd}.tar.bz2#/ksquares-%{git}.tar.bz2
 %else
