@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		ksquares
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	An implementation of the popular paper based game squares
 Group:		Graphical desktop/KDE
@@ -14,7 +14,6 @@ Source0:	https://invent.kde.org/games/ksquares/-/archive/%{gitbranch}/ksquares-%
 %else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/ksquares-%{version}.tar.xz
 %endif
-BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Test)
@@ -35,28 +34,19 @@ BuildRequires:  cmake(KF6NotifyConfig)
 BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6DocTools)
 
+%rename plasma6-ksquares
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KSquares is an implementation of the popular paper based game squares. 
 You must draw lines to complete squares, the player with the most s
 quares wins.
 
-%files -f ksquares.lang
+%files -f %{name}.lang
 %{_bindir}/ksquares                                                                                    
 %{_datadir}/applications/org.kde.ksquares.desktop                                                                                                                                
 %{_datadir}/config.kcfg/ksquares.kcfg      
 %{_iconsdir}/hicolor/*/apps/ksquares.png                                                               
 %{_datadir}/metainfo/org.kde.ksquares.appdata.xml
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n ksquares-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang ksquares --with-html
